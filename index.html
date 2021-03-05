@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Side Navigation Bar</title>
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+  href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/taskscheduler.css">
+  
+</head>
+<body>
+
+  
+
+<div class="wrapper">
+    <div class="sidebar tab">
+        <ul>
+            <li>
+              <a href="#" class="tablinks" onclick="openCity(event, 'London')"><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')"><i class="fas fa-user"></i>All Tasks</a></li>
+            <li><a href="upcomingTask.html" class="tablinks" onclick="openCity(event, 'Mumbai')"><i class="fas fa-user"></i>Upcoming</a></li>
+            <li><a href="#" class="tablinks" ><i class="fas fa-address-card"></i>Notification</a></li>
+        </ul>  
+    </div>
+    <div id="London" class="main_content tabcontent">
+
+      <div class="row">
+        <div class="topnav navbaradjust">
+          <div class="row">
+            <div class="search-container">
+              <form class="margin-left-56">
+                <input class="width-18" type="text" placeholder="Find task" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+            <div class="width-350">
+              <a href="createTask.html" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Add Task">
+                <span class="glyphicon glyphicon-plus-sign"></span>
+              </a>
+              <a href="#" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Notification"><i class="fa fa-bell"></i></a>
+             
+                <a href="#" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Profile">
+                  <i class='fas fa-male' ></i>
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </div>
+       <div class="col-md-8 Tasks">
+        
+         <h1>Today - 15 hours</h1>
+         <h4>Feb 7 Monday</h4>
+         <div class="assignedTask">
+           <h4 class="float-left padding-30">
+             Sedantory Tasks
+           </h4>
+          <table class="table margin-top-30">
+            
+            <tbody>
+             
+              <tr>
+                <th scope="row">
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                </th>
+                <td>
+                  <label class="label1" for="vehicle1"> ISTM 631 Assignment </label>
+                </td>
+                <td class="label1">3.5 hr</td>
+              </tr>
+              
+              <tr>
+                <th scope="row">
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                </th>
+                <td>
+                  <label for="vehicle3"> Part time job</label>
+                </td>
+                <td>4 hr</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+                </th>
+                <td>
+                  <label for="vehicle4"> Watch Football</label>
+                </td>
+                <td>1 hr</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input type="checkbox" id="vehicle5" name="vehicle5" value="Boat">
+                </th>
+                <td>
+                  <label for="vehicle5"> HEB order </label>
+                </td>
+                <td>2 hr</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
+                </th>
+                <td>
+                  <label for="vehicle6"> SCMT Assignment </label>
+                </td>
+                <td>2 hr</td>
+              </tr>
+              
+            </tbody>
+          </table>
+          <h4 class="float-left padding-30">
+            Physical Tasks
+          </h4>
+          <table class="table margin-top-30">
+            
+            <tbody>
+             
+              
+              <tr>
+                <th scope="row">
+                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                </th>
+                <td>
+                  <label for="vehicle2"> Cooking</label>
+                </td>
+                <td>1.5 hr</td>
+                
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <input type="checkbox" id="vehicle7" name="vehicle7" value="Boat">
+                </th>
+                <td>
+                  <label for="vehicle7"> Workout</label>
+                </td>
+                <td>1 hr</td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <input type="checkbox" id="vehicle8" name="vehicle8" value="Boat">
+                </th>
+                <td>
+                  <label for="vehicle8"> Playing Badmintton</label>
+                </td>
+                <td>1 hr</td>
+              </tr>
+              
+            </tbody>
+          </table>
+          <div>
+            <button type="button" class="btn btn-danger">
+              Add Task
+            </button>
+          </div>
+         </div>
+       </div>
+       <div class="col-md-4 margin-top-30">
+         <button type="button" class="btn btn-warning sortingButton">
+           Incomplete Tasks
+          <i class="bi bi-sort-up">
+            <img src="happy.svg" />
+          </i>
+         </button>
+         <button type="button" class="btn btn-warning sortingButton">
+          Non-Negotiable Tasks
+         <i class="bi bi-sort-up">
+           <img src="happy.svg" />
+         </i>
+        </button>
+       </div>
+     </div>
+    </div>
+
+    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="JS/taskscheduler.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" /> -->
