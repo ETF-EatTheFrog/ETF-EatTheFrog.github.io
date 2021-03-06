@@ -298,7 +298,7 @@ body {
 }
 
 .width-350 {
-  width: 828px;
+  width: 965px;
 }
 
 .assignedTask{
@@ -381,6 +381,13 @@ body {
 
 .margin-top-10 {
   margin-top: 10px;
+}
+
+.frogImage {
+  border-radius: 25px;
+  height: 40px;
+  width: 40px;
+  margin-left: -192px;
 }
 
 
