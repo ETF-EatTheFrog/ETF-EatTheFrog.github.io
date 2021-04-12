@@ -82,3 +82,51 @@ $(document).ready(function(){
   date_input.datepicker(options);
 })
 
+
+
+var day, month, year;
+var taskName;
+var taskdesc;
+var physicalTask;
+var hour,minute;
+var nonNego;
+
+$('#savedata').on('click', function(){
+  var date = new Date($('#dateObj').val());
+  day = date.getDate();
+  month = date.getMonth();
+  year = date.getFullYear();
+  taskName = $('#taskName').val();
+  taskdesc = $('#taskDesc').val();
+  if($('#physicalTask').is(":checked"))
+  {
+    physicalTask = "true";
+  } else{
+    physicalTask = "false";
+  }
+  hour = $('#hour').val();
+  minute = $('#minute').val();
+  if($('#NonNego').is(":checked"))
+  {
+    nonNego = "true";
+  } else{
+    nonNego = "false";
+  }
+window.localStorage.setItem('taskName',taskName);
+window.localStorage.setItem('hour',hour);
+window.localStorage.setItem('minute',minute);
+});
+
+$(".notification").on("click", function(){
+  $('.dropdown-content').slideToggle();
+});
+
+// var profilename = window.localStorage.getItem('username');
+
+// var text = "<a href='#'>Hi '"+profilename+"'</a>"
+
+// $('.dropdown-content-bell').append(text)
+
+
+
+

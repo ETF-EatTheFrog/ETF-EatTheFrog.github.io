@@ -28,7 +28,7 @@
               <a href="index.html" class="tablinks" onclick="openCity(event, 'London')"><i class="fas fa-home"></i>Home</a>
             </li>
             <li><a href="allTasks.html" class="tablinks" onclick="openCity(event, 'Paris')"><i class="fas fa-user"></i>All Tasks</a></li>
-            <li><a href="upcomingTask.html" class="tablinks" onclick="openCity(event, 'Mumbai')"><i class="fas fa-user"></i>Upcoming</a></li>
+            <li class="active"><a href="upcomingTask.html" class="tablinks" onclick="openCity(event, 'Mumbai')"><i class="fas fa-user"></i>Upcoming</a></li>
             <li><a href="#" class="tablinks" ><i class="fas fa-address-card"></i>Notification</a></li>
         </ul>  
     </div>
@@ -48,7 +48,14 @@
                 <a href="#" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Profile">
                   <i class='glyphicon glyphicon-user' ></i>
                 </a>
-                <a href="#" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Notification"><i class="fa fa-bell"></i></a>
+                <div class="dropdown-bell">
+                  <a href="#" class="notification dropbtn-bell" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Notification"><i class="fa fa-bell"><span class="badge">3</span></i></a>
+                  <div class="dropdown-content-bell">
+                    <a href="notification.html">ISTM 645 will.....</a>
+                    <a href="notification.html">You have 2 hour.....</a>
+                    <a href="notification.html">HEB order is.....</a>
+                  </div>
+                </div>
                 
                 
                 <a href="createTask.html" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Add Task">
@@ -58,33 +65,11 @@
           </div>
         </div>
        <div class="col-md-10 Tasks">
-        
-         <h1>Today - 15 hours</h1>
-         <h4>Feb 7 Monday</h4>
+         
         
  
-          <div class="row margin-left-20">
-                <button type="button" class="btn btn-warning sortingButton" onclick="myFunction1()">
-                Sort
-                <i class="bi bi-sort-up">
-                    <img src="happy.svg" />
-                    <div id="myDropdown1" class="dropdown-content">
-                        <a href="#">Today</a>
-                        <a href="#">This week</a>
-                        <a href="#">This month</a>
-                        <a href="#">custom</a>
-                    
-                    </div>
-                </i>
-                
-              </button>
-              <div id="myDropdown1" class="dropdown-content">
-                <a href="#">Today</a>
-                <a href="#">This week</a>
-                <a href="#">This month</a>
-                <a href="#">custom</a>
-            
-            </div>
+          <div class="row margin-left-20" style="margin-top: 30px;">
+               
 
                 <label class="control-label margin-left-20 margin-top-10" for="date">Start Date</label>
                 <input class="form-control width-15-percent margin-left-20" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
@@ -96,111 +81,187 @@
                   </button>
 
          </div>  
-         <div class="assignedTask">
-           <h4 class="float-left padding-30">
-            Sedentary Tasks
-           </h4>
-          <table class="table margin-top-30">
-            
-            <tbody>
-             
-              <tr>
-                <th scope="row">
-                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                </th>
-                <td>
-                  <label class="label1" for="vehicle1"> ISTM 631 Assignment </label>
-                </td>
-                <td class="label1">3.5 hr</td>
-              </tr>
-              
-              <tr>
-                <th scope="row">
-                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                </th>
-                <td>
-                  <label for="vehicle3"> Part time job</label>
-                </td>
-                <td>4 hr</td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
-                </th>
-                <td>
-                  <label for="vehicle4"> Watch Football</label>
-                </td>
-                <td>1 hr</td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <input type="checkbox" id="vehicle5" name="vehicle5" value="Boat">
-                </th>
-                <td>
-                  <label for="vehicle5"> HEB order </label>
-                </td>
-                <td>2 hr</td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
-                </th>
-                <td>
-                  <label for="vehicle6"> SCMT Assignment </label>
-                </td>
-                <td>2 hr</td>
-              </tr>
-              
-            </tbody>
-          </table>
-          <h4 class="float-left padding-30">
-            Physical Tasks
-          </h4>
-          <table class="table margin-top-30">
-            
-            <tbody>
-             
-              
-              <tr>
-                <th scope="row">
-                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                </th>
-                <td>
-                  <label for="vehicle2"> Cooking</label>
-                </td>
-                <td>1.5 hr</td>
-                
-              </tr>
 
-              <tr>
-                <th scope="row">
-                  <input type="checkbox" id="vehicle7" name="vehicle7" value="Boat">
-                </th>
-                <td>
-                  <label for="vehicle7"> Workout</label>
-                </td>
-                <td>1 hr</td>
-              </tr>
-
-              <tr>
-                <th scope="row">
-                  <input type="checkbox" id="vehicle8" name="vehicle8" value="Boat">
-                </th>
-                <td>
-                  <label for="vehicle8"> Playing Badminton</label>
-                </td>
-                <td>1 hr</td>
-              </tr>
+       
+         <div class="col-md-8 Tasks">
+        
+         
+          <h4 style="margin-top: 38px;margin-left: 20px;">Feb 9 Monday</h4>
+          <div class="assignedTask">
+            
+           <table class="table margin-top-30">
+             
+             <tbody>
               
-            </tbody>
-          </table>
-          <div>
-            <button type="button" class="btn btn-danger">
-                <a class="hrefClass" href="createTask.html">Add Task</a>
-            </button>
-          </div>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                 </th>
+                 <td>
+                   <label style="color: DarkMagenta;" class="hover-content" title="Research about ransomware attack and write 500 words about it" class="label1" for="vehicle1"> ISTM 645 Assignment <span class="fa fa-star checked"></span> </label>
+                 </td>
+                 <td class="label1">3.5 hr</td>
+               </tr>
+               
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                 </th>
+                 <td>
+                   <label style="color: DarkMagenta;" class="hover-content" title="finish the development of website first page" for="vehicle3"> Part time job</label>
+                 </td>
+                 <td>4 hr</td>
+               </tr>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+                 </th>
+                 <td>
+                   <label style="color: DarkMagenta;" class="hover-content" title="the match is between MU and Arsenal" for="vehicle4"> Watch Football</label>
+                 </td>
+                 <td>1 hr</td>
+               </tr>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle5" name="vehicle5" value="Boat">
+                 </th>
+                 <td>
+                   <label style="color: DarkMagenta;" class="hover-content" title="order banana,milk,cheese cake,oats,mangoes" for="vehicle5"> HEB order </label>
+                 </td>
+                 <td>2 hr</td>
+               </tr>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
+                 </th>
+                 <td>
+                   <label style="color: DarkMagenta;" class="hover-content" title="Read the materials and finish the Quiz" for="vehicle6">  ISTM 631 Assignment <span class="fa fa-star checked"></span> </label>
+                 </td>
+                 <td>2 hr</td>
+               </tr>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                 </th>
+                 <td>
+                   <label style="color: Teal;" class="hover-content" title="make fried chicken" for="vehicle2"> Cooking</label>
+                 </td>
+                 <td>1.5 hr</td>
+               </tr>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle7" name="vehicle7" value="Boat">
+                 </th>
+                 <td>
+                   <label style="color: Teal;" class="hover-content" title="leg day" for="vehicle7"> Workout</label>
+                 </td>
+                 <td>1 hr</td>
+               </tr>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle8" name="vehicle8" value="Boat">
+                 </th>
+                 <td>
+                   <label style="color: Teal;" class="hover-content" title="at REC center 7 pm" for="vehicle8"> Playing Badminton <span class="fa fa-star checked"></span></label>
+                 </td>
+                 <td>1 hr</td>
+               </tr>
+               
+             </tbody>
+           </table>
+           <h4 style="margin-top: 38px;margin-left: 20px;">Feb 11 Monday</h4>
+           <table class="table margin-top-30">
+              
+             <tbody>
+              
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                 </th>
+                 <td>
+                   <label style="color: DarkMagenta;" class="hover-content" title="Research about ransomware attack and write 500 words about it" class="label1" for="vehicle1"> Part time job <span class="fa fa-star checked"></span> </label>
+                 </td>
+                 <td class="label1">3.5 hr</td>
+               </tr>
+               
+             
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+                 </th>
+                 <td>
+                   <label style="color: DarkMagenta;" class="hover-content" title="the match is between MU and Arsenal" for="vehicle4"> Play Xbox</label>
+                 </td>
+                 <td>1 hr</td>
+               </tr>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle5" name="vehicle5" value="Boat">
+                 </th>
+                 <td>
+                   <label style="color: DarkMagenta;" class="hover-content" title="order banana,milk,cheese cake,oats,mangoes" for="vehicle5"> Edit photos </label>
+                 </td>
+                 <td>2 hr</td>
+               </tr>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
+                 </th>
+                 <td>
+                   <label style="color: DarkMagenta;" class="hover-content" title="Read the materials and finish the Quiz" for="vehicle6">  ISTM 631 Exam <span class="fa fa-star checked"></span> </label>
+                 </td>
+                 <td>2 hr</td>
+               </tr>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                 </th>
+                 <td>
+                   <label style="color: Teal;" class="hover-content" title="make fried chicken" for="vehicle2"> Cooking</label>
+                 </td>
+                 <td>1.5 hr</td>
+               </tr>
+               <tr>
+                 <th scope="row">
+                   <input type="checkbox" id="vehicle7" name="vehicle7" value="Boat">
+                 </th>
+                 <td>
+                   <label style="color: Teal;" class="hover-content" title="leg day" for="vehicle7"> going out with friends</label>
+                 </td>
+                 <td>1 hr</td>
+               </tr>
+             
+               
+             </tbody>
+           </table>
+           <div>
+              
+             <button type="button" class="btn btn-danger">
+               <a class="hrefClass" href="createTask.html">Add Task</a>
+             </button>
+           </form>
+           
          </div>
+          </div>
+         
+
+        </div>
+        <div class="col-md-4 margin-top-30">
+         
+         <div class="padding-top-30">
+           <span class="padding-margin" id="ornage-color"></span>
+           <span class="margin-left-20">Sedentary Tasks</span>
+         </div>
+         
+         
+         <div class="padding-top-30">
+           <span class="padding-margin" id="green-color"></span>
+           <span class="margin-left-20">Physical Tasks</span>
+         </div>
+         
+        </div>
        </div>
+       
      </div>
     </div>
 
