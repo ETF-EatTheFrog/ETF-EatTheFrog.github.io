@@ -115,6 +115,10 @@ $('#savedata').on('click', function(){
 window.localStorage.setItem('taskName',taskName);
 window.localStorage.setItem('hour',hour);
 window.localStorage.setItem('minute',minute);
+window.localStorage.setItem('month',month);
+window.localStorage.setItem('day',day);
+window.localStorage.setItem('year',year);
+
 });
 
 $(".notification").on("click", function(){
@@ -128,5 +132,38 @@ $(".notification").on("click", function(){
 // $('.dropdown-content-bell').append(text)
 
 
-
+// function sortTable() {
+//   var table, rows, switching, i, x, y, shouldSwitch;
+//   table = document.getElementById("HomeTable");
+//   switching = true;
+//   /*Make a loop that will continue until
+//   no switching has been done:*/
+//   while (switching) {
+//     //start by saying: no switching is done:
+//     switching = false;
+//     rows = table.rows;
+//     /*Loop through all table rows (except the
+//     first, which contains table headers):*/
+//     for (i = 0; i < (rows.length - 1); i++) {
+//       //start by saying there should be no switching:
+//       shouldSwitch = false;
+//       /*Get the two elements you want to compare,
+//       one from current row and one from the next:*/
+    
+      
+//       x = rows[i].getElementsByTagName("span")[0];
+//       y = rows[i + 1].getElementsByTagName("span")[0];
+//       //check if the two rows should switch place:
+//       if(x !== undefined) {
+//         if (x.className == "fa fa-star checked") {
+//           //if so, mark as a switch and break the loop:
+//           rows[i].parentNode.insertBefore(rows[i], rows[i+1]);
+//           switching = true;
+//         }
+//       }
+     
+//     }
+    
+//   }
+// }
 
