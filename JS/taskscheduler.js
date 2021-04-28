@@ -125,6 +125,11 @@ $(".notification").on("click", function(){
   $('.dropdown-content').slideToggle();
 });
 
+$(".dropdown-bell").on("click", function(){
+  window.location.href = "notification.html";
+  //window.open("notification.html"); 
+});
+
 // var profilename = window.localStorage.getItem('username');
 
 // var text = "<a href='#'>Hi '"+profilename+"'</a>"
