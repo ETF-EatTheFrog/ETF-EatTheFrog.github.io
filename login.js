@@ -14,6 +14,10 @@ $("#LoginButton").click(function() {
 });
 
 $("#SignupButton").click(function() {
-    window.location.replace("https://etf-eatthefrog.github.io/today.html");
+    window.location.replace("https://etf-eatthefrog.github.io/signup.html");
+})
+
+$("#SignupLogin").click(function() {
+    window.location.replace("https://etf-eatthefrog.github.io/Login.html");
 })
 
