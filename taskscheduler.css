@@ -526,4 +526,40 @@ body {
   background-color: #966fd6;
 }
 
+.organized {
+    font-size: 125px;
+    text-align: center;
+  
+    margin-top: 60px;
+    font-style: italic;
+    font-family: 'Josefin Sans';
+}
 
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.success {
+  border-color: #04AA6D;
+  color: green;
+}
+
+.container { 
+  height: 150px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
