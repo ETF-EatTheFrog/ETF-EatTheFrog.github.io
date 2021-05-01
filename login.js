@@ -13,3 +13,7 @@ $("#LoginButton").click(function() {
     }
 });
 
+$("#SignupButton").click(function() {
+    window.location.replace("https://etf-eatthefrog.github.io/today.html");
+})
+
