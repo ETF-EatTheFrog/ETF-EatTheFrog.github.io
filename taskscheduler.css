@@ -563,3 +563,35 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.videoDiv {
+  border: 2px solid;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.reviewerDiv {
+  border: 2px solid;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.contactUsDiv {
+  border: 2px solid;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+
