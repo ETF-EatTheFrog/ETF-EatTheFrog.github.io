@@ -132,12 +132,13 @@ $(".dropdown-bell").on("click", function(){
 
 
 $(".LoginButton").on("click", function(){
-  window.location.href = "Login.html";
+  window.location.replace("https://etf-eatthefrog.github.io/Login.html");
   //window.open("notification.html"); 
 });
 
 $(".SignupButton").on("click", function(){
-  window.location.href = "signup.html";
+  window.location.replace("https://etf-eatthefrog.github.io/signup.html");
+
   //window.open("notification.html"); 
 });
 // var profilename = window.localStorage.getItem('username');
