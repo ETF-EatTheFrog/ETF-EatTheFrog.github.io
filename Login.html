@@ -1,177 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+  href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="taskscheduler.css">
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-img.avatar {
-  width: 15%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    
+    </style>
 </head>
 <body>
 
-    <form id="login-form" >
-            <div class="imgcontainer">
-            <img src="profile.png" alt="Avatar" class="avatar">
-          </div>
-        
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input  id="name2" type="text" placeholder="Enter Username" required>
-        
-            <label for="psw"><b>Password</b></label>
-            <input id="pass2" type="password" placeholder="Enter Password" name="psw" required>
-        
-            <button type="submit">Login</button>
-            
-            
-          </div>
-
-          <p style="margin-left: 20px;">
-              Don't have account? <a href="signup.html">Click here</a>
-          </p>
-    </form>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
-    <script>
-        $(document).ready(function () {
+
+<div class="wrapper">
+
+   
+    
+    <div>
+      
+     <div class="col-md-12">
+       <div class="col-md-6">
+         <div class="col-md-4">
+          <img src="frog.jpeg" height="150px" width="200px"/>
+         </div>
+      
+          <div class="col-md-2" style="    margin-top: 70px;
+          font-size: 30px;
+          font-family: 'Josefin Sans';
+          font-style: italic;">
+            <p>EatTheFrog.com</p>
+          </div>
+       </div>
+     </div>
+     
+     <div class="col-md-12">
        
+      <form id="login-form" style="margin-top: 100px;">
+              
+          
+            <div class="container" style="border: 2px solid; height: 250px;">
+              
+              <label for="uname"><b>Email</b></label>
+              <input  id="name2" type="text" placeholder="Enter Username" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input id="pass2" type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" style="margin: 0;
+              position: absolute;
+              top: 88%;
+              left: 50%;
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              width: 100px;
+              border-radius: 10px;">Login</button>
+              
+              <p style="position: absolute;
+                top: 132%;
+                left: 50%;  -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);">
+                  Don't have an account? 
+  
+                  <button type="submit" style="margin: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              width: 100px;
+              border-radius: 10px;
+              margin-top: 50px;">Signup</button>
+              </p>
+            </div>
+            
+            
+      </form>
+     </div>
+    </div>
+
     
-          $("#login-form").submit(function () {
-            var enteredName = $("#name2").val();
-            var enteredPass = $("#pass2").val();
-    
-            var storedName = localStorage.getItem("n1");
-            var storedPass = localStorage.getItem("p1");
-    
-            if (enteredName == storedName && enteredPass == storedPass) {
-                window.location.replace("https://etf-eatthefrog.github.io/index.html");
-                return false;
-            }
-            else {
-              alert("Username and Password do not match!");
-            }
-    
-          });
-    
-        });
-      </script>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="login.js"></script>
+<script src="JS/taskscheduler.js"></script>
+
 </body>
+
 </html>
+
+
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" /> -->

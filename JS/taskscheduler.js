@@ -130,6 +130,16 @@ $(".dropdown-bell").on("click", function(){
   //window.open("notification.html"); 
 });
 
+
+$(".LoginButton").on("click", function(){
+  window.location.href = "Login.html";
+  //window.open("notification.html"); 
+});
+
+$(".SignupButton").on("click", function(){
+  window.location.href = "signup.html";
+  //window.open("notification.html"); 
+});
 // var profilename = window.localStorage.getItem('username');
 
 // var text = "<a href='#'>Hi '"+profilename+"'</a>"
