@@ -42,11 +42,11 @@
           <div class="row">
             
             <div class="search-container">
-              <form class="margin-left-56">
+              
                 <img src="frog.jpeg" height="30px" width="30px" class="frogImage" />
-                <input class="width-18" type="text" placeholder="Find task" name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
+                <input id="searchText" class="width-18" type="text" placeholder="Find task" name="search">
+                <button onclick="search()"><i class="fa fa-search"></i></button>
+             
             </div>
             <div class="width-350">
               <div class="dropdown-profile">
@@ -89,7 +89,7 @@
                   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                 </th>
                 <td>
-                  <label style="color: DarkMagenta;" class="hover-content" title="Research about ransomware attack and write 500 words about it" class="label1" for="vehicle1"> ISTM 645 Assignment <span class="fa fa-star checked"></span> </label>
+                  <label style="color: DarkMagenta;" class="hover-content" title="Research about ransomware attack and write 500 words about it" class="label1" for="vehicle1"> ISTM 645 Assignment </label>
                 </td>
                 <td class="label1">3.5 hr</td>
               </tr>
@@ -126,7 +126,7 @@
                   <input type="checkbox" id="vehicle5" name="vehicle5" value="Boat">
                 </th>
                 <td>
-                  <label style="color: DarkMagenta;" class="hover-content" title="Read the materials and finish the Quiz" for="vehicle5">  ISTM 631 Assignment <span class="fa fa-star checked"></span> </label>
+                  <label style="color: DarkMagenta;" class="hover-content" title="Read the materials and finish the Quiz" for="vehicle5">  ISTM 631 Assignment </label>
                 </td>
                 <td>2 hr</td>
               </tr>
@@ -153,7 +153,7 @@
                   <input type="checkbox" id="vehicle8" name="vehicle8" value="Boat">
                 </th>
                 <td>
-                  <label style="color: Teal;" class="hover-content" title="at REC center 7 pm" for="vehicle8"> Playing Badminton <span class="fa fa-star checked"></span></label>
+                  <label style="color: Teal;" class="hover-content" title="at REC center 7 pm" for="vehicle8"> Playing Badminton </label>
                 </td>
                 <td>1 hr</td>
               </tr>
@@ -168,6 +168,7 @@
             </form>
             
           </div>
+          <div style="margin-top: 20px;" id="result"></div>
          </div>
        </div>
        <div class="col-md-4 margin-top-30">

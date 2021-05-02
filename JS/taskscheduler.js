@@ -129,9 +129,9 @@ var taskName;
 var taskdesc;
 var physicalTask;
 var hour, minute;
-var nonNego;
 
 $('#savedata').on('click', function () {
+  
   var date = new Date($('#dateObj').val());
   day = date.getDate();
   month = date.getMonth();
@@ -145,11 +145,6 @@ $('#savedata').on('click', function () {
   }
   hour = $('#hour').val();
   minute = $('#minute').val();
-  if ($('#NonNego').is(":checked")) {
-    nonNego = "true";
-  } else {
-    nonNego = "false";
-  }
   window.localStorage.setItem('taskName', taskName);
   window.localStorage.setItem('hour', hour);
   window.localStorage.setItem('minute', minute);
@@ -186,4 +181,14 @@ $(".SignupButton").on("click", function () {
 
 // $('.dropdown-content-bell').append(text)
 
-
+function search() {
+  let searchText = $('#searchText').val().toUpperCase();
+  let matches = 0;
+  for(let i=0; i<$("#HomeTable label").length; i++) {
+    if ($("#HomeTable label")[i].textContent.toUpperCase().includes(searchText)) {
+      matches++;
+    }
+  }
+  $("#result").text(matches + " matches found.");
+  $("#searchText").val("");
+}
