@@ -108,6 +108,168 @@ $(document).ready(function () {
       document.getElementById('tr8').innerHTML = '';
     } 
   });
+  $('#vehicle8').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('tr8').innerHTML = '';
+    } 
+  });
+  $('#v1').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr1').innerHTML = '';
+    } 
+  });
+  $('#v2').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr2').innerHTML = '';
+    } 
+  });
+  $('#v3').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr3').innerHTML = '';
+    } 
+  });
+  $('#v4').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr4').innerHTML = '';
+    } 
+  });
+  $('#v5').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr5').innerHTML = '';
+    } 
+  });
+  $('#v6').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr6').innerHTML = '';
+    } 
+  });
+  $('#v7').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr7').innerHTML = '';
+    } 
+  });
+  $('#v8').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr8').innerHTML = '';
+    } 
+  });
+  $('#v9').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr9').innerHTML = '';
+    } 
+  });
+  $('#v1').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr1').innerHTML = '';
+    } 
+  });
+  $('#v10').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr10').innerHTML = '';
+    } 
+  });
+  $('#v11').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr11').innerHTML = '';
+    } 
+  });
+  $('#v12').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr12').innerHTML = '';
+    } 
+  });
+  $('#v13').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr13').innerHTML = '';
+    } 
+  });
+  $('#v14').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr14').innerHTML = '';
+    } 
+  });
+  $('#v15').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr15').innerHTML = '';
+    } 
+  });
+  $('#v16').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr16').innerHTML = '';
+    } 
+  });
+  $('#v17').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr17').innerHTML = '';
+    } 
+  });
+  $('#v18').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr18').innerHTML = '';
+    } 
+  });
+  $('#v19').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr19').innerHTML = '';
+    } 
+  });
+  $('#v20').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr20').innerHTML = '';
+    } 
+  });
+  $('#v21').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr21').innerHTML = '';
+    } 
+  });
+  $('#v22').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr23').innerHTML = '';
+    } 
+  });
+  $('#v24').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr24').innerHTML = '';
+    } 
+  });
+  $('#v25').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr25').innerHTML = '';
+    } 
+  });
+  $('#v26').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('alltr26').innerHTML = '';
+    } 
+  });
 });
 
 $(document).ready(function () {
@@ -191,4 +353,32 @@ function search() {
   }
   $("#result").text(matches + " matches found.");
   $("#searchText").val("");
+}
+
+
+function searchTable() {
+  let searchText = $('#searchText1').val().toUpperCase();
+  let matches = 0;
+  for(let i=0; i<$("#HomeTable1 label").length; i++) {
+    if ($("#HomeTable1 label")[i].textContent.toUpperCase().includes(searchText)) {
+      matches++;
+    }
+  }
+  for(let i=0; i<$("#HomeTable2 label").length; i++) {
+    if ($("#HomeTable2 label")[i].textContent.toUpperCase().includes(searchText)) {
+      matches++;
+    }
+  }
+  for(let i=0; i<$("#HomeTable3 label").length; i++) {
+    if ($("#HomeTable3 label")[i].textContent.toUpperCase().includes(searchText)) {
+      matches++;
+    }
+  }
+  for(let i=0; i<$("#HomeTable4 label").length; i++) {
+    if ($("#HomeTable4 label")[i].textContent.toUpperCase().includes(searchText)) {
+      matches++;
+    }
+  }
+  $("#result_alltasks").text(matches + " matches found.");
+  $("#searchText1").val("");
 }

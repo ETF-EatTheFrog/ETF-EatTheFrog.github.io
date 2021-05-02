@@ -39,8 +39,8 @@
               
                 <img src="frog.jpeg" height="30px" width="30px" class="frogImage" />
                 
-                <input class="width-18" type="text" placeholder="Find task" name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <input id="searchText1" class="width-18" type="text" placeholder="Find task" name="search">
+                <button onclick="searchTable()" type="submit"><i class="fa fa-search"></i></button>
              
             </div>
             <div class="width-350">
@@ -87,53 +87,55 @@
                   </button>
 
          </div>  
-<div id="allTasks">
+         <div style="margin-top: 20px; margin-left: 30px; color: red;" id="result_alltasks">
+        </div>
+        <div id="allTasks">
 
-</div>
-       
+        </div>
+              
          <div class="col-md-8 Tasks">
 
           <h4 style="margin-top: 38px;margin-left: 20px;">Feb 4 Friday</h4>
           <div class="assignedTask">
             
-           <table class="table margin-top-30">
+           <table id="HomeTable1" class="table margin-top-30">
              
              <tbody>
              
-               <tr>
+               <tr id="alltr1">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+                   <input type="checkbox" id="v1" name="v1" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="the match is between MU and Arsenal" for="vehicle4"> Part time Job <span class="fa fa-star checked"></span></label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="the match is between MU and Arsenal" for="v1"> Part time Job </label>
                  </td>
                  <td>5 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr2">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle5" name="vehicle5" value="Boat">
+                   <input type="checkbox" id="v2" name="v2" value="Boat">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="order banana,milk,cheese cake,oats,mangoes" for="vehicle5">Yell Practice <span class="fa fa-star checked"></span></label>
+                   <label style="color: Teal;" class="hover-content" title="order banana,milk,cheese cake,oats,mangoes" for="v2">Yell Practice </label>
                  </td>
                  <td>2 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr3">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
+                   <input type="checkbox" id="v3" name="v3" value="Boat">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="Read the materials and finish the Quiz" for="vehicle6">  Yoga  class  </label>
+                   <label style="color: Teal;" class="hover-content" title="Read the materials and finish the Quiz" for="v3">  Yoga  class  </label>
                  </td>
                  <td>1 hr</td>
                </tr>
                
-               <tr>
+               <tr id="alltr4">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle8" name="vehicle8" value="Boat">
+                   <input type="checkbox" id="v4" name="v4" value="Boat">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="at REC center 7 pm" for="vehicle8"> Playing Tennis </label>
+                   <label style="color: Teal;" class="hover-content" title="at REC center 7 pm" for="v4"> Playing Tennis </label>
                  </td>
                  <td>1 hr</td>
                </tr>
@@ -146,80 +148,80 @@
           <h4 style="margin-top: 38px;margin-left: 20px;">Feb 7 Monday</h4>
           <div class="assignedTask">
             
-           <table class="table margin-top-30">
+           <table id="HomeTable2" class="table margin-top-30">
              
              <tbody>
               
-               <tr>
+               <tr id="alltr5">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                   <input type="checkbox" id="v5" name="v5" value="Bike">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="Research about ransomware attack and write 500 words about it" class="label1" for="vehicle1"> ISTM 645 Assignment <span class="fa fa-star checked"></span> </label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="Research about ransomware attack and write 500 words about it" class="label1" for="v5"> ISTM 645 Assignment </label>
                  </td>
                  <td class="label1">3.5 hr</td>
                </tr>
                
-               <tr>
+               <tr id="alltr6">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                   <input type="checkbox" id="v6" name="v6" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="finish the development of website first page" for="vehicle3"> Part time job</label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="finish the development of website first page" for="v6"> Part time job</label>
                  </td>
                  <td>4 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr7">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+                   <input type="checkbox" id="v7" name="v7" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="the match is between MU and Arsenal" for="vehicle4"> Watch Football</label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="the match is between MU and Arsenal" for="v7"> Watch Football</label>
                  </td>
                  <td>1 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr8">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle5" name="vehicle5" value="Boat">
+                   <input type="checkbox" id="v8" name="v8" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="order banana,milk,cheese cake,oats,mangoes" for="vehicle5"> HEB order </label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="order banana,milk,cheese cake,oats,mangoes" for="v8"> HEB order </label>
                  </td>
                  <td>2 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr9">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
+                   <input type="checkbox" id="v9" name="v9" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="Read the materials and finish the Quiz" for="vehicle6">  ISTM 631 Assignment <span class="fa fa-star checked"></span> </label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="Read the materials and finish the Quiz" for="v9">  ISTM 631 Assignment </label>
                  </td>
                  <td>2 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr10">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                   <input type="checkbox" id="v10" name="v10" value="Car">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="make fried chicken" for="vehicle2"> Cooking</label>
+                   <label style="color: Teal;" class="hover-content" title="make fried chicken" for="v10"> Cooking</label>
                  </td>
                  <td>1.5 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr11">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle7" name="vehicle7" value="Boat">
+                   <input type="checkbox" id="v11" name="v11" value="Boat">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="leg day" for="vehicle7"> Workout</label>
+                   <label style="color: Teal;" class="hover-content" title="leg day" for="v11"> Workout</label>
                  </td>
                  <td>1 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr12">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle8" name="vehicle8" value="Boat">
+                   <input type="checkbox" id="v12" name="v12" value="Boat">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="at REC center 7 pm" for="vehicle8"> Playing Badminton <span class="fa fa-star checked"></span></label>
+                   <label style="color: Teal;" class="hover-content" title="at REC center 7 pm" for="v12"> Playing Badminton </label>
                  </td>
                  <td>1 hr</td>
                </tr>
@@ -232,80 +234,80 @@
           <h4 style="margin-top: 38px;margin-left: 20px;">Feb 9 Wednesday</h4>
           <div class="assignedTask">
             
-           <table class="table margin-top-30">
+           <table id="HomeTable3" class="table margin-top-30">
              
              <tbody>
               
-               <tr>
+               <tr id="alltr13">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                   <input type="checkbox" id="v13" name="v13" value="Bike">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="Research about ransomware attack and write 500 words about it" class="label1" for="vehicle1"> ISTM 645 Assignment <span class="fa fa-star checked"></span> </label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="Research about ransomware attack and write 500 words about it" class="label1" for="v13"> ISTM 645 Assignment  </label>
                  </td>
                  <td class="label1">3.5 hr</td>
                </tr>
                
-               <tr>
+               <tr id="alltr14">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                   <input type="checkbox" id="v14" name="v14" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="finish the development of website first page" for="vehicle3"> Part time job</label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="finish the development of website first page" for="v14"> Part time job</label>
                  </td>
                  <td>4 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr15">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+                   <input type="checkbox" id="v15" name="v15" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="the match is between MU and Arsenal" for="vehicle4"> Watch Football</label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="the match is between MU and Arsenal" for="v15"> Watch Football</label>
                  </td>
                  <td>1 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr16">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle5" name="vehicle5" value="Boat">
+                   <input type="checkbox" id="v16" name="v16" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="order banana,milk,cheese cake,oats,mangoes" for="vehicle5"> HEB order </label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="order banana,milk,cheese cake,oats,mangoes" for="v16"> HEB order </label>
                  </td>
                  <td>2 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr17">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
+                   <input type="checkbox" id="v17" name="v17" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="Read the materials and finish the Quiz" for="vehicle6">  ISTM 631 Assignment <span class="fa fa-star checked"></span> </label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="Read the materials and finish the Quiz" for="v17">  ISTM 631 Assignment</label>
                  </td>
                  <td>2 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr18">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                   <input type="checkbox" id="v18" name="v18" value="Car">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="make fried chicken" for="vehicle2"> Cooking</label>
+                   <label style="color: Teal;" class="hover-content" title="make fried chicken" for="v18"> Cooking</label>
                  </td>
                  <td>1.5 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr19">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle7" name="vehicle7" value="Boat">
+                   <input type="checkbox" id="v19" name="v19" value="Boat">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="leg day" for="vehicle7"> Workout</label>
+                   <label style="color: Teal;" class="hover-content" title="leg day" for="v19"> Workout</label>
                  </td>
                  <td>1 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr20">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle8" name="vehicle8" value="Boat">
+                   <input type="checkbox" id="v20" name="v20" value="Boat">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="at REC center 7 pm" for="vehicle8"> Playing Badminton <span class="fa fa-star checked"></span></label>
+                   <label style="color: Teal;" class="hover-content" title="at REC center 7 pm" for="v20"> Playing Badminton </label>
                  </td>
                  <td>1 hr</td>
                </tr>
@@ -313,63 +315,63 @@
              </tbody>
            </table>
            <h4 style="margin-top: 38px;margin-left: 20px;">Feb 11 Friday</h4>
-           <table class="table margin-top-30">
+           <table id="HomeTable4" class="table margin-top-30">
               
              <tbody>
               
-               <tr>
+               <tr id="alltr21">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                   <input type="checkbox" id="v21" name="v21" value="Bike">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="Research about ransomware attack and write 500 words about it" class="label1" for="vehicle1"> Part time job <span class="fa fa-star checked"></span> </label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="Research about ransomware attack and write 500 words about it" class="label1" for="v21"> Part time job </label>
                  </td>
                  <td class="label1">3.5 hr</td>
                </tr>
                
              
-               <tr>
+               <tr id="alltr22">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+                   <input type="checkbox" id="v22" name="v22" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="the match is between MU and Arsenal" for="vehicle4"> Play Xbox</label>
-                 </td>
+                   <label style="color: DarkMagenta;" class="hover-content" title="the match is between MU and Arsenal" for="v22"> Play Xbox</label>
+                 </td>          
                  <td>1 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr23">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle5" name="vehicle5" value="Boat">
+                   <input type="checkbox" id="v23" name="v23" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="order banana,milk,cheese cake,oats,mangoes" for="vehicle5"> Edit photos </label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="order banana,milk,cheese cake,oats,mangoes" for="v23"> Edit photos </label>
                  </td>
                  <td>2 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr24">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
+                   <input type="checkbox" id="v24" name="v24" value="Boat">
                  </th>
                  <td>
-                   <label style="color: DarkMagenta;" class="hover-content" title="Read the materials and finish the Quiz" for="vehicle6">  ISTM 631 Exam <span class="fa fa-star checked"></span> </label>
+                   <label style="color: DarkMagenta;" class="hover-content" title="Read the materials and finish the Quiz" for="v24">  ISTM 631 Exam  </label>
                  </td>
                  <td>2 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr25">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                   <input type="checkbox" id="v25" name="v25" value="Car">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="make fried chicken" for="vehicle2"> Cooking</label>
+                   <label style="color: Teal;" class="hover-content" title="make fried chicken" for="v25"> Cooking</label>
                  </td>
                  <td>1.5 hr</td>
                </tr>
-               <tr>
+               <tr id="alltr26">
                  <th scope="row">
-                   <input type="checkbox" id="vehicle7" name="vehicle7" value="Boat">
+                   <input type="checkbox" id="v26" name="v26" value="Boat">
                  </th>
                  <td>
-                   <label style="color: Teal;" class="hover-content" title="leg day" for="vehicle7"> going out with friends</label>
+                   <label style="color: Teal;" class="hover-content" title="leg day" for="v26"> going out with friends</label>
                  </td>
                  <td>1 hr</td>
                </tr>
