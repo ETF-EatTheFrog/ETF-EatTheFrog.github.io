@@ -62,11 +62,51 @@ $(document).ready(function () {
 
   $('#vehicle1').change(function () {
     if ($(this).is(":checked")) {
-      $('.label1').css({ "opacity": "0.5" });
-    } else {
-      $('.label1').css({ "opacity": "1" });
-    }
-
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('tr1').innerHTML = '';
+    } 
+  });
+  $('#vehicle2').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('tr2').innerHTML = '';
+    } 
+  });
+  $('#vehicle3').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('tr3').innerHTML = '';
+    } 
+  });
+  $('#vehicle4').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('tr4').innerHTML = '';
+    } 
+  });
+  $('#vehicle5').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('tr5').innerHTML = '';
+    } 
+  });
+  $('#vehicle6').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('tr6').innerHTML = '';
+    } 
+  });
+  $('#vehicle7').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('tr7').innerHTML = '';
+    } 
+  });
+  $('#vehicle8').change(function () {
+    if ($(this).is(":checked")) {
+      //$('.label1').css({ "opacity": "0.5" });
+      document.getElementById('tr8').innerHTML = '';
+    } 
   });
 });
 
@@ -138,6 +178,8 @@ $(".SignupButton").on("click", function () {
   window.location.href = "signup.html";
   //window.open("notification.html"); 
 });
+
+
 // var profilename = window.localStorage.getItem('username');
 
 // var text = "<a href='#'>Hi '"+profilename+"'</a>"
