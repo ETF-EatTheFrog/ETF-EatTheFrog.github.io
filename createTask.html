@@ -88,10 +88,14 @@
               <textarea class="form-control width-50" id="taskDesc" id="exampleFormControlTextarea1" rows="3"></textarea>
              </div>
              <div class="form-switch font-size-20 padding-left-0">
-                 <span>
-                     Physical Task?
+            
+                 <span style="cursor: pointer;">
+                     Physical Task
+                     <i class="fa fa-question-circle" aria-hidden="true" title='These are those tasks which involves no computer work or any electronic device. For eg. playing, cooking etc.'></i>
                  </span>
+                 
                  <input class="form-check-input postion-left width-50-size" id="physicalTask" type="checkbox" checked>
+                 
   
              </div>
              <div class="font-size-20 margin-top-20">
@@ -113,8 +117,8 @@
   
              </div> -->
              <div class="margin-top-20">
-               <button onclick="alert('Task added in all tasks section')" id="savedata" type="submit" class="btn btn-primary widh-30-percent font-size-15">Save</button>
-               <button type="submit" class="btn btn-primary margin-left-50 widh-30-percent font-size-15">Cancel</button>
+               <button onclick="alert('Task added in all tasks section')" id="savedata" type="submit" class="btn btn-danger widh-30-percent font-size-15">Save</button>
+               <button type="submit" class="btn btn-danger margin-left-50 widh-30-percent font-size-15">Cancel</button>
              </div>
              
            </form>
