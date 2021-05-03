@@ -382,3 +382,4 @@ function searchTable() {
   $("#result_alltasks").text(matches + " matches found.");
   $("#searchText1").val("");
 }
+
