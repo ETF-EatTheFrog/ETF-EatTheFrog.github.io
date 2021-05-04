@@ -27,7 +27,7 @@
         <ul>
           <li><a href="today.html" class="tablinks" onclick="openCity(event, 'Today')"><i class="fas fa-calendar-day"></i>Today</a></li>
             <li><a href="allTasks.html" class="tablinks" onclick="openCity(event, 'Paris')"><i class="fas fa-user"></i>All Tasks</a></li>
-            <li><a href="notification.html" class="tablinks" onclick="openCity(event, 'Notification')" ><i class="fas fa-address-card"></i>Notification</a></li>
+            <li><a href="notification.html" class="tablinks" onclick="openCity(event, 'Notification')" ><i class="fas fa-address-card"></i>Notification <span class="badge">3</span></a></li>
             <li class="active"><a href="AboutUs.html" class="tablinks" onclick="openCity(event, 'AboutUs')" ><i class="fab fa-readme"></i>  About Us</a></li>
         </ul>  
     </div>
@@ -58,12 +58,14 @@
                 </div>
               </div>
              
-              <div class="dropdown-bell">
+              <!-- <div class="dropdown-bell">
                 <a href="#" class="notification dropbtn-bell" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Notification"><i class="fa fa-bell"><span class="badge">3</span></i></a>
                
+              </div> -->
+              
+              <div class="dropdown-bell">
+                <a href="today.html" style="font-size:24px; color: black;"><i class="fa fa-home" aria-hidden="true"></i></a>
               </div>
-              
-              
               
               <a href="createTask.html" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Add Task">
                 <span class="glyphicon glyphicon-plus-sign"></span>
@@ -76,184 +78,242 @@
         
        </div>
        <div style="margin-top: 90px;">
+        <div style="border: 1px;
+       
+        height: 300px;
+        background-color: gainsboro;
+        margin-left: 20px;
+        margin-right: 20px;
+    ">
           <div style="margin-left: 30px; margin-top: 30px;">
-            <h3><b>Our Mission</b></h3>
-            <p>Being college students ourselves, we understand that there is a 
-              lot to do every day. But this doesn’t mean, we get lost in things. 
-              We can reclaim our time by proper time management. Eat the Frog's 
-              mission is to allow yourself to take back control of your time by 
-              better organizing your work and life.</p>
+            <h3 style="text-align: center;padding-top: 20px;"><b>Our Mission</b></h3>
+            <div class="col-md-8" style="margin-top: 40px;">
+              <p style="text-align: center; line-height: 26px; padding-top: 36px;">Being college students ourselves, we understand that there is a 
+                lot to do every day. But this doesn’t mean, we get lost in things. 
+                We can reclaim our time by proper time management. Eat the Frog's 
+                mission is to allow yourself to take back control of your time by 
+                better organizing your work and life.</p>
+            </div>
+           <div class="col-md-4">
+            <img src="frog.jpeg" height="200px" width="300px" style="border-radius: 100px;" />
+           </div>
+              
           </div>
+        </div>
+          
           <div class="Tasks videoDiv">
               <p style="text-align: center;margin-top: 30px;">video content</p>
           </div>
-          <div style="margin-top: 30px; margin-left: 30px;">
-            <h4>Our Team</h4>
-            <div class="col-md-12">
-              <div class="col-md-3">
-                <img src="Taylor_min.jpg" height="300px" width="300px" />
+          <div style="margin-right: 40px;">
+            <img style="margin-top: 30px; margin-left: 20px;" src="team.png" width="100%" height="60%" />
+          </div>
+          <div style="border: 1px;
+       
+          height: 1030px;
+          background-color: gainsboro;
+          margin-left: 20px;
+          margin-right: 20px;">
+            <div style="margin-top: 30px; margin-left: 30px;">
+              <h4 style="text-align: center;padding-top: 20px;">Our Team</h4>
+              <div class="col-md-12">
+                <div class="col-md-1">
+                  <img src="Taylor_min.jpg" height="170px" width="170px" />
+                </div>
+                <div class="col-md-1">
+  
+                </div>
+                <div class="col-md-10">
+                  <h4>
+                    Thomas Taylor
+                  </h4>
+                  <p style="line-height: 20px;">
+                    I am a Texas native and I have worked in the IT sector for several years while I
+                    attended Texas A&M University as an undergraduate. I have worked in the IT department at
+                    Waggoner National Bank, Vernon Independent School District, and the Human Element LLC in
+                    Tokyo. Now I am in my last semester as a graduate student at A&M.
+                  </p>
+                </div>
               </div>
-              <div class="col-md-1">
-
+              
+              <div class="col-md-12" style="margin-top: 20px;">
+                <div class="col-md-1">
+                  <img src="Noni Gulati.jpg" height="170px" width="170px" />
+                </div>
+                <div class="col-md-1">
+  
+                </div>
+                <div class="col-md-10">
+                  <h4>
+                    Noni Gulati
+                  </h4>
+                  <p>
+                    I was born and raised in Delhi, India. I did my schooling
+                    at Rama Krishna Senior Secondary School in Delhi and my undergraduate degree in Computer
+                    Science & Engineering from Galgotias University, Greater Noida. I worked for about three years
+                    as a Marketing Strategist and Analyst at Publicis Sapient, India where I got the opportunity to build
+                    digital analytics solutions for my client’s websites. Having spent the first 25 years of my life in
+                    Delhi, I decided to move out to pursue my master’s education in the States. This is my last semester as a Management Information Systems graduate student at Mays Business School, Texas A&M
+                    University.
+                  </p>
+                </div>
               </div>
-              <div class="col-md-8">
-                <h4>
-                  Thomas Taylor
-                </h4>
-                <p>
-                  I am a Texas native and I have worked in the IT sector for several years while I
-                  attended Texas A&M University as an undergraduate. I have worked in the IT department at
-                  Waggoner National Bank, Vernon Independent School District, and the Human Element LLC in
-                  Tokyo. Now I am in my last semester as a graduate student at A&M.
-                </p>
+              
+              <div class="col-md-12" style="margin-top: 20px;">
+                <div class="col-md-1">
+                  <img src="Gehani_Kunal.jpg" height="170px" width="170px" />
+                </div>
+                <div class="col-md-1">
+  
+                </div>
+                <div class="col-md-10">
+                  <h4>
+                    Kunal Gehani
+                  </h4>
+                  <p>
+                    I am from Mumbai, India. I earned my undergraduate degree in electronics and
+                    telecommunication from Mumbai University. Thereafter, I got an opportunity to work as an IT
+                    consultant with Deloitte in the cloud-computing domain. I pursued the same for 4 years. Having
+                    honed my technical skills, I wanted to understand the gap between business problems and
+                    corresponding IT solutions and hence, decided to pursue my master's in management information
+                    systems with Mays business school.
+                  </p>
+                </div>
               </div>
-            </div>
+  
+              <div class="col-md-12" style="margin-top: 20px;">
+                <div class="col-md-1">
+                  <img src="Dewangan_Harshvardhan.jpg" height="170px" width="170px" />
+                </div>
+                <div class="col-md-1">
+  
+                </div>
+                <div class="col-md-10">
+                  <h4>
+                    Harshvardhan Dewangan
+                  </h4>
+                  <p>
+                    I am from Chhattisgarh, India, and I worked for around 3 years in the
+                    IT industry there as a software developer where my tasks were developing websites and mobile
+                    applications with some of the latest technologies. I am currently pursuing a master’s in
+                    management information systems and currently in my last semester.
+                  </p>
+                </div>
+              </div>
+               
+              <div class="col-md-12" style="margin-top: 20px;">
+                <div class="col-md-1">
+                  <img src="rimsha.jpeg" height="170px" width="170px" />
+                </div>
+                <div class="col-md-1">
+  
+                </div>
+                <div class="col-md-10">
+                  <h4>
+                    Rimsha Mariam Alam
+                  </h4>
+                  <p>
+                    I belong to a city called Ahmedabad in Gujarat, India. I got my
+                    undergraduate degree in Electrical and Electronics from Amity University, Jaipur. I possess 2 years
+                    of work experience as a Senior Software Engineer at Capgemini India where I worked with the
+                    operators of one of the world’s busiest airports as our client. Witnessing information systems’
+                    tremendous impact on this transformation propelled me to take up Management Information
+                    Systems at Mays business school. I am currently in my final year of my graduate program.
+                  </p>
+                </div>
+              </div>
             
-            <div class="col-md-12" style="margin-top: 20px;">
-              <div class="col-md-3">
-                <img src="Noni Gulati.jpg" height="300px" width="300px" />
               </div>
-              <div class="col-md-1">
-
-              </div>
-              <div class="col-md-8">
-                <h4>
-                  Noni Gulati
-                </h4>
-                <p>
-                  I was born and raised in Delhi, India. I did my schooling
-                  at Rama Krishna Senior Secondary School in Delhi and my undergraduate degree in Computer
-                  Science & Engineering from Galgotias University, Greater Noida. I worked for about three years
-                  as a Marketing Strategist and Analyst at Publicis Sapient, India where I got the opportunity to build
-                  digital analytics solutions for my client’s websites. Having spent the first 25 years of my life in
-                  Delhi, I decided to move out to pursue my master’s education in the States. This is my last semester as a Management Information Systems graduate student at Mays Business School, Texas A&M
-                  University.
-                </p>
-              </div>
-            </div>
-            
-            <div class="col-md-12" style="margin-top: 20px;">
-              <div class="col-md-3">
-                <img src="headshot.png" height="300px" width="300px" />
-              </div>
-              <div class="col-md-1">
-
-              </div>
-              <div class="col-md-8">
-                <h4>
-                  Kunal Gehani
-                </h4>
-                <p>
-                  I am from Mumbai, India. I earned my undergraduate degree in electronics and
-                  telecommunication from Mumbai University. Thereafter, I got an opportunity to work as an IT
-                  consultant with Deloitte in the cloud-computing domain. I pursued the same for 4 years. Having
-                  honed my technical skills, I wanted to understand the gap between business problems and
-                  corresponding IT solutions and hence, decided to pursue my master's in management information
-                  systems with Mays business school.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-12" style="margin-top: 20px;">
-              <div class="col-md-3">
-                <img src="Dewangan_Harshvardhan.jpg" height="300px" width="300px" />
-              </div>
-              <div class="col-md-1">
-
-              </div>
-              <div class="col-md-8">
-                <h4>
-                  Harshvardhan Dewangan
-                </h4>
-                <p>
-                  I am from Chhattisgarh, India, and I worked for around 3 years in the
-                  IT industry there as a software developer where my tasks were developing websites and mobile
-                  applications with some of the latest technologies. I am currently pursuing a master’s in
-                  management information systems and currently in my last semester.
-                </p>
-              </div>
-            </div>
-             
-            <div class="col-md-12" style="margin-top: 20px;">
-              <div class="col-md-3">
-                <img src="rimsha.jpeg" height="300px" width="300px" />
-              </div>
-              <div class="col-md-1">
-
-              </div>
-              <div class="col-md-8">
-                <h4>
-                  Rimsha Mariam Alam
-                </h4>
-                <p>
-                  I belong to a city called Ahmedabad in Gujarat, India. I got my
-                  undergraduate degree in Electrical and Electronics from Amity University, Jaipur. I possess 2 years
-                  of work experience as a Senior Software Engineer at Capgemini India where I worked with the
-                  operators of one of the world’s busiest airports as our client. Witnessing information systems’
-                  tremendous impact on this transformation propelled me to take up Management Information
-                  Systems at Mays business school. I am currently in my final year of my graduate program.
-                </p>
-              </div>
-            </div>
+          </div>
           
-            </div>
             <div class="col-md-12">
               <div class="reviewerDiv">
-                <h4 style="text-align: center;">Our Reviwers</h4>
-                <p style="text-align: center;">Why User's can trust Us? Hear from our reviewers.</p>
-                <p style="margin-left: 10px;">Our team has a combined 10 years working withing the IT industry and regularly consults with other professional to make sure our products provide the most value to our users. 
-                  As both students and working professions ourselves we understand the needs and problems our users face every day. 
-                  When our users place their trust in us to help solve their problems, we believe it is our duty to respect and honor that trust by working to ensure our users are provided with the best possible experience we can provide. 
-                  Our users trust is the most valuable thing they can give us and we strive to do our upmost to return that value to them in the form of our product.</p>
-                <div class="col-md-6">
-                  <div class="col-md-3">
-                    <img src="headshot.png" height="100px" width="100px" />
-                  </div>
-                  <div class="col-md-9">
-                    <p style="margin-top: 20px;">
-                     The website seems straight forward. The physical activity piece may need some additional explanation in terms of its
-                      intent.
-                    </p>
-                  </div>
+                <div class="col-md-4">
+                  <img style="margin-top: 40px;
+                  margin-left: 31px;" src="trust_us_section.jpeg" height="360px" width="350px" />
                 </div>
-                <div class="col-md-6">
-                  <div class="col-md-3">
-                    <img src="headshot.png" height="100px" width="100px" />
+                <div class="col-md-8">
+             
+                  <h4 style="text-align: center;">Our Reviwers</h4>
+                  <p style="text-align: center;">Why User's can trust Us? Hear from our reviewers.</p>
+                  <p style="margin-left: 10px;">Our team has a combined 10 years working withing the IT industry and regularly consults with other professional to make sure our products provide the most value to our users. 
+                    As both students and working professions ourselves we understand the needs and problems our users face every day. 
+                    When our users place their trust in us to help solve their problems, we believe it is our duty to respect and honor that trust by working to ensure our users are provided with the best possible experience we can provide. 
+                    Our users trust is the most valuable thing they can give us and we strive to do our upmost to return that value to them in the form of our product.</p>
+                  <div class="col-md-6">
+                    <div class="col-md-3">
+                      <img src="headshot.png" height="100px" width="100px" />
+                    </div>
+                    <div class="col-md-9">
+                      <p style="margin-top: 20px;">
+                       The website seems straight forward. The physical activity piece may need some additional explanation in terms of its
+                        intent.
+                      </p>
+                    </div>
                   </div>
-                  <div class="col-md-9">
-                    <p style="margin-top: 20px;">
-                      The overall design is pretty Nice. Everything works smoothly and the design and feel of the website give an appealing look.
-                    </p>
+                  <div class="col-md-6">
+                    <div class="col-md-3">
+                      <img src="headshot.png" height="100px" width="100px" />
+                    </div>
+                    <div class="col-md-9">
+                      <p style="margin-top: 20px;">
+                        The overall design is pretty Nice. Everything works smoothly and the design and feel of the website give an appealing look.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="col-md-3">
-                    <img src="headshot.png" height="100px" width="100px" />
+                  <div class="col-md-6">
+                    <div class="col-md-3">
+                      <img src="headshot.png" height="100px" width="100px" />
+                    </div>
+                    <div class="col-md-9">
+                      <p style="margin-top: 20px;">
+                        Good consistency in theme and Super easy to learn.
+                      </p>
+                    </div>
                   </div>
-                  <div class="col-md-9">
-                    <p style="margin-top: 20px;">
-                      Good consistency in theme and Super easy to learn.
-                    </p>
+                  <div class="col-md-6">
+                    <div class="col-md-3">
+                      <img src="headshot.png" height="100px" width="100px" />
+                    </div>
+                    <div class="col-md-9">
+                      <p style="margin-top: 20px;">
+                        Nice design overall and all th functionality is working properly.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="col-md-3">
-                    <img src="headshot.png" height="100px" width="100px" />
-                  </div>
-                  <div class="col-md-9">
-                    <p style="margin-top: 20px;">
-                      Nice design overall and all th functionality is working properly.
-                    </p>
-                  </div>
-                </div>
+               
               </div>
+              </div>
+
             </div>
             <div class="col-md-12">
-              <div class="contactUsDiv">
-                <h4>Contact Us</h4>
-                <p>Email: ETF_eatthefrog@gmail.com</p>
-              </div>
+              <div style="border: 1px;
+              background-color: gainsboro;
+              margin-top: 45px;
+              margin-left: 5px;
+             
+              height: 81px;
+          ">
+                
+                  <div class="contactUsDiv">
+                    <div class="col-md-4">
+                      <h4>Phone</h4>
+                      <p style="color: blue;">(999)-999-9999</p>
+                    </div>
+                    <div class="col-md-4">
+                      <h4>Contact Us</h4>
+                      <p style="color: blue;">Email: ETF_eatthefrog@gmail.com</p>
+                    </div>
+                    <div class="col-md-4">
+                      <h4>Address</h4>
+                      <p style="color: blue;">TAMU, Collge Station, 94089</p>
+                    </div>
+                    
+                  </div>
+                </div>
             </div>
+            
+            </div>
+           
             
           </div>
        </div>
