@@ -6,11 +6,14 @@ var item5 = window.localStorage.getItem('day');
 var item6 = window.localStorage.getItem('year');
 var item7 = window.localStorage.getItem('physicalTask');
 
-if(item7 == true) {
-    $('#allTasks').html("<div class='col-md-8 Tasks'><h4 style='margin-top: 38px;margin-left: 20px;'>"+item4+"/"+item5+"/"+item6+"</h4><div class='assignedTask'><table class='table margin-top-30'><tbody><tr><th scope='row'><input type='checkbox' id='vehicle1' name='vehicle1' value='Bike'></th><td><label style='color: Teal;' class='label1' for='vehicle1'> "+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td></tr></tbody></table></div></div>");
-} else {
-    $('#allTasks').html("<div class='col-md-8 Tasks'><h4 style='margin-top: 38px;margin-left: 20px;'>"+item4+"/"+item5+"/"+item6+"</h4><div class='assignedTask'><table class='table margin-top-30'><tbody><tr><th scope='row'><input type='checkbox' id='vehicle1' name='vehicle1' value='Bike'></th><td><label style='color: DarkMagenta;' class='label1' for='vehicle1'> "+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td></tr></tbody></table></div></div>");
+if(item1 != null) {
+    if(item7 == true) {
+        $('#TodaysTasks').html("<tr><th scope='row'><input type='checkbox' id='vehicle0' name='vehicle0' value='Bike'></th><td><label style='color: Teal;' class='label1' for='v0'> "+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td></tr>");
+    } else {
+        $('#TodaysTasks').html("<tbody><tr><th scope='row'><input type='checkbox' id='vehicle0' name='vehicle0' value='Bike'></th><td><label style='color: DarkMagenta;' class='label1' for='v0'> "+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td></tr>");
+    }
 }
+
 
 
 var today = new Date();
@@ -22,9 +25,12 @@ today = mm + '/' + dd + '/' + yyyy;
 
 
 if(item4 + '/' + item5 + '/' + item6 == today) {
-    if(item7 == true) {
-        $('#TodaysTasks').html("<th scope='row'><input type='checkbox' id='v12' name='v12' value='Bike'></th><td><label style='color: Teal;' class='label1' for='v12'>"+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td>");
-    } else {
-        $('#TodaysTasks').html("<th scope='row'><input type='checkbox' id='v12' name='v12' value='Bike'></th><td><label style='color: DarkMagenta;' class='label1' for='v12'>"+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td>");
+    if(item1 != null) {
+        if(item7 == true) {
+            $('#TodaysTasks').html("<th scope='row'><input type='checkbox' id='v0' name='v0' value='Bike'></th><td><label style='color: Teal;cursor:pointer;' class='label1' for='v0'>"+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td>");
+        } else {
+            $('#TodaysTasks').html("<th scope='row'><input type='checkbox' id='v0' name='v0' value='Bike'></th><td><label style='color: DarkMagenta;cursor:pointer;' class='label1' for='v0'>"+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td>");
+        }
     }
+    
 }

@@ -168,10 +168,10 @@ $(document).ready(function () {
       document.getElementById('alltr9').innerHTML = '';
     } 
   });
-  $('#v1').change(function () {
+  $('#v0').change(function () {
     if ($(this).is(":checked")) {
       //$('.label1').css({ "opacity": "0.5" });
-      document.getElementById('alltr1').innerHTML = '';
+      document.getElementById('TodaysTasks').innerHTML = '';
     } 
   });
   $('#v10').change(function () {
@@ -399,7 +399,7 @@ function searchTable() {
   var item6 = window.localStorage.getItem('year');
 
   if(item4 + '/' + item5 + '/' + item6 == today) {
-    $('#allTasks').html("<tr><th scope='row'><input type='checkbox' id='v12' name='v12' value='Bike'></th><td><label class='label1' for='v12'>"+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td></tr>");
+    $('#TodaysTasks').html("<tr><th scope='row'><input type='checkbox' id='v0' name='v0' value='Bike'></th><td><label class='label1' style='cursor:pointer'; for='v0'>"+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td></tr>");
   }
 
 
