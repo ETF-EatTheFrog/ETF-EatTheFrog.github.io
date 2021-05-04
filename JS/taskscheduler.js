@@ -296,7 +296,7 @@ $('#savedata').on('click', function () {
   
   var date = new Date($('#dateObj').val());
   day = date.getDate();
-  month = date.getMonth();
+  month = date.getMonth()+1;
   year = date.getFullYear();
   taskName = $('#taskName').val();
   taskdesc = $('#taskDesc').val();
@@ -313,7 +313,8 @@ $('#savedata').on('click', function () {
   window.localStorage.setItem('month', month);
   window.localStorage.setItem('day', day);
   window.localStorage.setItem('year', year);
-
+  window.localStorage.setItem('physicalTask', physicalTask);
+  
 });
 
 $(".dropdown-bell").on("click", function () {
@@ -382,4 +383,24 @@ function searchTable() {
   $("#result_alltasks").text(matches + " matches found.");
   $("#searchText1").val("");
 }
+
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var yyyy = today.getFullYear();
+
+  today = mm + '/' + dd + '/' + yyyy;
+  $("#currentday").html(today);
+  var item1 = window.localStorage.getItem('taskName');
+  var item2 = window.localStorage.getItem('hour');
+  var item3 = window.localStorage.getItem('minute');
+  var item4 = window.localStorage.getItem('month');
+  var item5 = window.localStorage.getItem('day');
+  var item6 = window.localStorage.getItem('year');
+
+  if(item4 + '/' + item5 + '/' + item6 == today) {
+    $('#allTasks').html("<tr><th scope='row'><input type='checkbox' id='v12' name='v12' value='Bike'></th><td><label class='label1' for='v12'>"+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td></tr>");
+  }
+
+
 
