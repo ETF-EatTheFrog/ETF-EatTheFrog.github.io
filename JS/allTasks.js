@@ -21,7 +21,7 @@ var yyyy = today.getFullYear();
 today = mm + '/' + dd + '/' + yyyy;
 
 
-if("0"+item4 + '/' + "0"+item5 + '/' + item6 == today) {
+if(item4 + '/' + item5 + '/' + item6 == today) {
     if(item7 == true) {
         $('#TodaysTasks').html("<th scope='row'><input type='checkbox' id='v12' name='v12' value='Bike'></th><td><label style='color: Teal;' class='label1' for='v12'>"+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td>");
     } else {

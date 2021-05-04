@@ -310,8 +310,8 @@ $('#savedata').on('click', function () {
   window.localStorage.setItem('taskName', taskName);
   window.localStorage.setItem('hour', hour);
   window.localStorage.setItem('minute', minute);
-  window.localStorage.setItem('month', month);
-  window.localStorage.setItem('day', day);
+  window.localStorage.setItem('month',"0"+month);
+  window.localStorage.setItem('day', "0"+day);
   window.localStorage.setItem('year', year);
   window.localStorage.setItem('physicalTask', physicalTask);
   
@@ -402,5 +402,20 @@ function searchTable() {
     $('#allTasks').html("<tr><th scope='row'><input type='checkbox' id='v12' name='v12' value='Bike'></th><td><label class='label1' for='v12'>"+item1+"</label></td><td class='label1'>"+item2+"."+item3+" hr</td></tr>");
   }
 
+
+  var selected1;
+  var selected2;
+  $("#datepicker1").on("change",function(){
+    selected1 = $(this).val();
+    //alert(selected);
+  });
+  $("#datepicker2").on("change",function(){
+    selected2 = $(this).val();
+    //alert(selected);
+  });
+
+  if(start_date == selected1 && end_date == selected2) {
+    
+  }
 
 
