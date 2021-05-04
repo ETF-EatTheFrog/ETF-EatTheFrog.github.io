@@ -414,8 +414,102 @@ function searchTable() {
     //alert(selected);
   });
 
-  if(start_date == selected1 && end_date == selected2) {
-    
-  }
+  $("#dateSubmit").on("click", function(){
+
+    if(new Date($('#date1').html()) >= new Date(selected1) && new Date($('#date1').html()) <= new Date(selected2)) {
+      $("#allTasks").css("display","none");
+      $("#allTasks3").css("display","none");
+      $("#allTasks4").css("display","none");
+      $("#allTasks5").css("display","none");
+      if(new Date($('#date2').html()) >= new Date(selected1) && new Date($('#date2').html()) <= new Date(selected2)) {
+        $("#allTasks3").css("display","block");
+        $("#allTasks4").css("display","none");
+        $("#allTasks5").css("display","none");
+        if(new Date($('#date3').html()) >= new Date(selected1) && new Date($('#date3').html()) <= new Date(selected2)) {
+        
+        
+          $("#allTasks4").css("display","block");
+          $("#allTasks5").css("display","none");
+        }
+        if(new Date($('#date4').html()) >= new Date(selected1) && new Date($('#date4').html()) <= new Date(selected2)) {
+          $("#allTasks5").css("display","block");
+        }
+        
+      }
+    } else if(new Date($('#date2').html()) >= new Date(selected1) && new Date($('#date2').html()) <= new Date(selected2)) {
+      $("#allTasks").css("display","none");
+      $("#allTasks2").css("display","none");
+      $("#allTasks4").css("display","none");
+      $("#allTasks5").css("display","none");
+      if(new Date($('#date3').html()) >= new Date(selected1) && new Date($('#date3').html()) <= new Date(selected2)) {
+        
+        
+        $("#allTasks4").css("display","block");
+        $("#allTasks5").css("display","none");
+      }
+      if(new Date($('#date4').html()) >= new Date(selected1) && new Date($('#date4').html()) <= new Date(selected2)) {
+        $("#allTasks5").css("display","block");
+      }
+    } else if(new Date($('#date3').html()) >= new Date(selected1) && new Date($('#date3').html()) <= new Date(selected2)) {
+      $("#allTasks").css("display","none");
+      $("#allTasks2").css("display","none");
+      $("#allTasks3").css("display","none");
+      $("#allTasks5").css("display","none");
+      if(new Date($('#date4').html()) >= new Date(selected1) && new Date($('#date4').html()) <= new Date(selected2)) {
+        $("#allTasks5").css("display","block");
+      }
+    } else if(new Date($('#date4').html()) >= new Date(selected1) && new Date($('#date4').html()) <= new Date(selected2)) {
+      $("#allTasks").css("display","none");
+      $("#allTasks2").css("display","none");
+      $("#allTasks3").css("display","none");
+      $("#allTasks4").css("display","none");
+    }
+
+    // if(new Date($('#date1').html()) >= new Date(selected1) && new Date($('#date2').html()) <= new Date(selected2)) {
+    //   $("#allTasks").css("display","none");
+    //   //$("#allTasks2").css("display","block");
+    //   //$("#allTasks3").css("display","block");
+    //   $("#allTasks4").css("display","none");
+    //   $("#allTasks5").css("display","none");
+    // }
+
+    // if($('#date1').html() == selected1 && $('#date3').html() == selected2) {
+    //   $("#allTasks").css("display","none");
+    //   //$("#allTasks2").css("display","block");
+    //   //$("#allTasks3").css("display","block");
+    //   //$("#allTasks4").css("display","none");
+    //   $("#allTasks5").css("display","none");
+    // }
+    // if($('#date1').html() == selected1 && $('#date4').html() == selected2) {
+    //   $("#allTasks").css("display","none");
+    //   //$("#allTasks2").css("display","block");
+    //   //$("#allTasks3").css("display","block");
+    //   //$("#allTasks4").css("display","none");
+    //   //$("#allTasks5").css("display","none");
+    // }
+    // if($('#date2').html() == selected1 && $('#date3').html() == selected2) {
+    //   $("#allTasks").css("display","none");
+    //   $("#allTasks2").css("display","none");
+    //   //$("#allTasks3").css("display","block");
+    //   //$("#allTasks4").css("display","none");
+    //   $("#allTasks5").css("display","none");
+    // }
+    // if($('#date3').html() == selected1 && $('#date4').html() == selected2) {
+    //   $("#allTasks").css("display","none");
+    //   $("#allTasks2").css("display","none");
+    //   $("#allTasks3").css("display","none");
+    //   //$("#allTasks4").css("display","none");
+    //   //$("#allTasks5").css("display","none");
+    // }
+    // if($('#date2').html() == selected1 && $('#date4').html() == selected2) {
+    //   $("#allTasks").css("display","none");
+    //   $("#allTasks2").css("display","none");
+    //     //$("#allTasks3").css("display","none");
+    //   //$("#allTasks4").css("display","none");
+    //   //$("#allTasks5").css("display","none");
+    // }
+  });
+
+  
 
 
