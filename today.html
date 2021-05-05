@@ -37,7 +37,7 @@
     <div id="London" class="main_content tabcontent">
       
       <div class="row">
-        <div class="topnav navbaradjust" style="padding-left: 223px;">
+        <div class="topnav navbaradjust" style="position: fixed; padding-left: 222px;">
           
           <div class="row">
             
@@ -48,35 +48,51 @@
                 <button onclick="search()"><i class="fa fa-search"></i></button>
              
             </div>
-            <div class="width-350">
-              <div class="dropdown-profile">
-                <a href="#" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Profile">
-                  <i class='glyphicon glyphicon-user' ></i>
-                </a>
-                <div class="dropdown-content-profile">
-                  <a href="#">Hi Admin!</a>
-                  <a href="index.html">Logout</a>
-                  
+            <div class="desktop">
+              <div class="width-350">
+                <div class="dropdown-profile">
+                  <a href="#" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Profile">
+                    <i class='glyphicon glyphicon-user' ></i>
+                  </a>
+                  <div class="dropdown-content-profile">
+                    <a href="#">Hi Admin!</a>
+                    <a href="index.html">Logout</a>
+                    
+                  </div>
                 </div>
-              </div>
-             
-              <!-- <div class="dropdown-bell">
-                <a href="#" class="notification dropbtn-bell" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Notification"><i class="fa fa-bell"><span class="badge">3</span></i></a>
-                
-              </div> -->
-              <div class="dropdown-bell">
-                <a href="today.html" style="font-size:24px; color: black;"><i class="fa fa-home" aria-hidden="true"></i></a>
-              </div>
-              
-              
-              <a href="createTask.html" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Add Task">
-                <span class="glyphicon glyphicon-plus-sign"></span>
-                
-              </a>
+                  <div class="dropdown-bell">
+                    <a href="today.html" style="font-size:24px; color: black;"><i class="fa fa-home" aria-hidden="true"></i></a>
+                  </div>
+                  
+                  <a href="createTask.html" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Add Task">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                  </a>
+                </div>
+            </div>
+            <div class="mobile_device_380px">
+              <div style="width: 550px;">
+                <div class="dropdown-profile">
+                  <a href="#" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Profile">
+                    <i class='glyphicon glyphicon-user' ></i>
+                  </a>
+                  <div class="dropdown-content-profile">
+                    <a href="#">Hi Admin!</a>
+                    <a href="index.html">Logout</a>
+                    
+                  </div>
+                </div>
+                  <div class="dropdown-bell">
+                    <a href="today.html" style="font-size:24px; color: black;"><i class="fa fa-home" aria-hidden="true"></i></a>
+                  </div>
+                  
+                  <a href="createTask.html" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Add Task">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                  </a>
+                </div>
             </div>
           </div>
         </div>
-       <div class="col-md-8 Tasks">
+       <div class="col-md-8 Tasks" style="margin-top: 40px;">
         
          
          <h3 style="margin-top: 38px;margin-left: 20px;" id="currentday"></h3>
@@ -175,7 +191,7 @@
           <div style="margin-top: 20px;color: red;" id="result"></div>
          </div>
        </div>
-       <div class="col-md-4 margin-top-30">
+       <div class="col-md-4" style="margin-top: 50px;">
          <!-- <button type="button" class="btn btn-warning sortingButton">
            Incomplete Tasks
           <i class="bi bi-sort-up">

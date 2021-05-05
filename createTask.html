@@ -33,7 +33,7 @@
    
     <div id="London" class="main_content tabcontent">
       <div class="row">
-        <div class="topnav navbaradjust">
+        <div class="topnav navbaradjust" style="position: fixed;">
           <div class="row">
             <div class="search-container">
               <form class="margin-left-56">
@@ -42,32 +42,53 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
               </form>
             </div>
-            <div class="width-350">
-              <div class="dropdown-profile">
-                <a href="#" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Profile">
-                  <i class='glyphicon glyphicon-user' ></i>
-                </a>
-                <div class="dropdown-content-profile">
-                  <a href="#">Hi Admin!</a>
-                  <a href="index.html">Logout</a>
+            <div class="desktop">
+              <div class="width-350">
+                <div class="dropdown-profile">
+                  <a href="#" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Profile">
+                    <i class='glyphicon glyphicon-user' ></i>
+                  </a>
+                  <div class="dropdown-content-profile">
+                    <a href="#">Hi Admin!</a>
+                    <a href="index.html">Logout</a>
+                    
+                  </div>
+                </div>
+                  <div class="dropdown-bell">
+                    <a href="today.html" style="font-size:24px; color: black;"><i class="fa fa-home" aria-hidden="true"></i></a>
+                  </div>
                   
+                  <a href="createTask.html" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Add Task">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                  </a>
                 </div>
-              </div>
-              <!-- <a href="#" class="notification" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Notification">
-                <i class="fa fa-bell"></i><span class="badge">3</span></a> -->
-                <div class="dropdown-bell">
-                  <a href="today.html" style="font-size:24px; color: black;"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </div>
+            <div class="mobile_device_380px">
+              <div style="width: 550px;">
+                <div class="dropdown-profile">
+                  <a href="#" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Profile">
+                    <i class='glyphicon glyphicon-user' ></i>
+                  </a>
+                  <div class="dropdown-content-profile">
+                    <a href="#">Hi Admin!</a>
+                    <a href="index.html">Logout</a>
+                    
+                  </div>
                 </div>
-              
-              <a href="createTask.html" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Add Task">
-                <span class="glyphicon glyphicon-plus-sign"></span>
-              </a>
+                  <div class="dropdown-bell">
+                    <a href="today.html" style="font-size:24px; color: black;"><i class="fa fa-home" aria-hidden="true"></i></a>
+                  </div>
+                  
+                  <a href="createTask.html" style="font-size:24px" data-toggle="tooltip" data-placement="top" title="Add Task">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                  </a>
+                </div>
             </div>
           </div>
         </div>
         <div class="col-md-10 padding-left-50">
          
-          <form class="margin-top-50">
+          <form style="margin-top: 75px;">
 
             <div>
               <div class="container-fluid">

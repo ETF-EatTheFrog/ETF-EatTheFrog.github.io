@@ -594,6 +594,18 @@ body {
   margin-left: 30px;
 }
 
+ /* if desktop */
+ .mobile_device_380px {
+  display: none;
+}
+
+
+/* if mobile device max width 380px */
+@media only screen and (max-device-width: 380px) {
+  .mobile_device_380px{display: block;}       
+  .desktop {display: none;}
+} 
+
 
 
 
